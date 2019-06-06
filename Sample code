@@ -1,0 +1,126 @@
+#include <iostream>
+#include <stdlib.h>
+using namespace std;
+
+class SIS_class
+{
+public:
+char st_name[30]="",st_course1[10]="",st_course2[10]="",st_course3[10]="";
+int st_ID;
+float crse_mrks1=0, crse_mrks2=0, crse_mrks3=0, st_gpa=0;
+  
+void display()
+{
+cout << "\nStudent name is :"<<st_name[30]<< "ID is :"<<st_ID;
+cout << "\nRegistered courses of :"<<st_name[30]<< "is " << st_course1[10]<< " , "<<st_course2[10]<< " , "<<st_course3[10];
+cout << "\nMarks for :"<<st_course1[10]<< " is " <<crse_mrks1;
+cout << "\nMarks for :"<<st_course2[10]<< " is " <<crse_mrks2;
+cout << "\nMarks for :"<<st_course3[10]<< " is " <<crse_mrks3;
+cout<<"The Overall GPA secured is :"<<st_gpa;
+}
+  
+void basic_info()
+{
+  
+cout << "\nStudent name is :"; cin>>st_name[30];
+cout<< "ID is :"; cin>>st_ID;
+cout << "\nRegistered courses are :"; cin>>st_course1[10]>>st_course2[10]>>st_course3[10];
+}
+  
+void marks_info()
+{
+cout << "\nMarks for :"<<st_course1[10]<< " is " ; cin>>crse_mrks1;
+cout << "\nMarks for :"<<st_course2[10]<< " is " ; cin>>crse_mrks1;
+cout << "\nMarks for :"<<st_course3[10]<< " is " ; cin>>crse_mrks1;
+}
+
+void gpa_cal()
+{
+st_gpa=(crse_mrks1+crse_mrks2+crse_mrks3)/100;
+}
+
+
+};
+
+void admin_fn()
+{
+SIS_class cl1;
+  
+int ad_chc;
+cout << "For insert of basic info press 1 For insert of marks info Press 2 For display of Information press 3\n";
+  
+cin>>ad_chc;
+  
+switch(ad_chc)
+{
+case 1 :
+cl1.basic_info(); cout << "Information updated for basic_info \n";
+break;
+
+case 3 :
+cl1.display();
+break;
+
+case 2 :
+cl1.marks_info(); cout << "Information updated for marks_info\n"; cl1.gpa_cal();
+break;
+  
+default :
+cout << "Invalid option" << endl;
+}
+  
+}
+
+int main()
+{
+SIS_class cl1;
+  
+int u_chc=0;
+cout << "//// === Welcome to Student Information System ==== ////\n";
+u_chc_lbl:
+cout << "For Admin press 1 For Students Press 2 For exit press 3\n";
+cin>>u_chc;
+
+if (u_chc== 1)
+{
+cout << "Please provide admin key to proceed\n";
+int u_key;
+  
+cin>>u_key;
+if (u_key!=900123)
+{
+cout << "No Admin access so Press 2 for Student entry or press 3 for exit\n";
+   goto u_chc_lbl;
+}
+
+// else
+// goto u_swch;
+}
+u_swch:
+switch(u_chc)
+{
+case 1 :
+
+  
+admin_fn();
+break;
+
+case 2 :
+cl1.display();
+break;
+
+case 3 :
+exit(0); break;
+  
+default :
+cout << "Invalid option" << endl;
+}
+
+cout << "Press any number from 1 to 9 to continue or 0(zero) for exit\n";
+int chc;
+cin>>chc;
+if (chc>=1 && chc<=9)
+goto u_chc_lbl;
+
+return 0;
+}
