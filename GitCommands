@@ -1,0 +1,27 @@
+//Checks to see if git is installed
+C:\Users\Luis>git 
+
+//Changes directory to Desktop to save files
+C:\Users\Luis>cd Desktop
+
+//Initializes 
+C:\Users\Luis>cd Desktop git init
+
+//Copy file
+C:\Users\Luis\Desktop>git clone https://github.com/JoeDKoal94/SoftwareEng
+
+//Make changes to file and then use the following commands
+C:\Users\Luis\Desktop\SoftwareEng>git add ReadMe
+
+//Input user email
+C:\Users\Luis\Desktop\SoftwareEng>git config --global user.email "luisdomjr11@gmail.com"
+
+//Insert comments in " "
+C:\Users\Luis\Desktop\SoftwareEng>git commit -m "edit ReadMe by Luis"
+
+//Checks to see if any other modifications were made in clone file that need adding
+C:\Users\Luis\Desktop\SoftwareEng>git status
+
+//Final command to add to respository 
+C:\Users\Luis\Desktop\SoftwareEng>git push origin master
+**Asks for user name and password**
