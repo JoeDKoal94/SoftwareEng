@@ -6,66 +6,75 @@
 #include <stdlib.h>
 #include <string>
 using namespace std;
-	
-string st_name[30], st_course1[10], st_course2[10], st_course3[10];
-int st_ID;
+
+string st_name[10], st_course1[10], st_course2[10], st_course3[10];
+int st_ID[10];
 double crse_mrks1[10];
-double crse_mrks2[10]; 
-double crse_mrks3[10]; 
-double st_gpa;
+double crse_mrks2[10];
+double crse_mrks3[10];
+double st_gpa[10];
+int temp;
 
-void display()
+void display(int counter)
 {
-	cout << "\nStudent name is :" << st_name[0] << "ID is :" << st_ID;
-	cout << "\nRegistered courses of :" << st_name[0] << "is " << st_course1[0] << " , " << st_course2[0] << " , " << st_course3[0];
-	cout << "\nMarks for :" << st_course1[0] << " is " << crse_mrks1[0];
-	cout << "\nMarks for :" << st_course2[0] << " is " << crse_mrks2[0];
-	cout << "\nMarks for :" << st_course3[0] << " is " << crse_mrks3[0];
-	cout << "\nThe Overall GPA secured is :" << st_gpa;
+	cout << "\nStudent name is :" << st_name[counter] << "ID is :" << st_ID[counter];
+	cout << "\nRegistered courses of :" << st_name[counter] << "is " << st_course1[counter] << " , " << st_course2[counter] << " , " << st_course3[counter];
+	cout << "\nMarks for :" << st_course1[counter] << " is " << crse_mrks1[counter];
+	cout << "\nMarks for :" << st_course2[counter] << " is " << crse_mrks2[counter];
+	cout << "\nMarks for :" << st_course3[counter] << " is " << crse_mrks3[counter];
+	cout << "\nThe Overall GPA secured is :" << st_gpa[counter];
 }
 
-void basic_info()
+void basic_info(int counter)
 {
 
-	cout << "\nStudent name is :"; cin >> st_name[0];
-	cout << "ID is :"; cin >> st_ID;
-	cout << "\nRegistered courses are :"; cin >> st_course1[0] >> st_course2[0] >> st_course3[0];
+	cout << "\nStudent name is :"; cin >> st_name[counter];
+	cout << "ID is :"; cin >> st_ID[counter];
+	cout << "\nRegistered courses are :"; cin >> st_course1[counter] >> st_course2[counter] >> st_course3[counter];
 }
 
-void marks_info()
+void marks_info(int counter)
 {
-	cout << "\nMarks for :" << st_course1[0] << " is "; 
-	cin >> crse_mrks1[0];
-	cout << "\nMarks for :" << st_course2[0] << " is "; 
-	cin >> crse_mrks2[0];
-	cout << "\nMarks for :" << st_course3[0] << " is "; 
-	cin >> crse_mrks3[0];
+	cout << "\nMarks for :" << st_course1[counter] << " is ";
+	cin >> crse_mrks1[counter];
+	cout << "\nMarks for :" << st_course2[counter] << " is ";
+	cin >> crse_mrks2[counter];
+	cout << "\nMarks for :" << st_course3[counter] << " is ";
+	cin >> crse_mrks3[counter];
 }
 
-void gpa_cal()
+void gpa_cal(int counter)
 {
-	st_gpa = (crse_mrks1[0] + crse_mrks2[0] + crse_mrks3[0]) / 100;
+	st_gpa[counter] = (crse_mrks1[counter] + crse_mrks2[counter] + crse_mrks3[counter]) / 100;
 }
 
 void admin_fn()
 {
+
 	int ad_chc;
 	cout << "For insert of basic info press 1 For insert of marks info Press 2 For display of Information press 3\n";
 
 	cin >> ad_chc;
 
+	cout << "Input the Student record being changed: ";
+	cin >> temp;
+	temp = temp - 1;
+	system("CLS");
 	switch (ad_chc)
 	{
 	case 1:
-		basic_info(); cout << "Information updated for basic_info \n";
+		basic_info(temp); cout << "Information updated for basic_info \n";
+		system("PAUSE");
 		break;
 
 	case 3:
-		display();
+		display(temp);
+		system("PAUSE");
 		break;
 
 	case 2:
-		marks_info(); cout << "Information updated for marks_info\n"; gpa_cal();
+		marks_info(temp); cout << "Information updated for marks_info\n"; gpa_cal(temp);
+		system("PAUSE");
 		break;
 
 	default:
@@ -78,6 +87,7 @@ int main()
 	int u_chc = 0;
 	cout << "//// === Welcome to Student Information System ==== ////\n";
 u_chc_lbl:
+	system("CLS");
 	cout << "For Admin press 1 For Students Press 2 For exit press 3\n";
 	cin >> u_chc;
 
@@ -106,7 +116,10 @@ u_swch:
 		break;
 
 	case 2:
-		display();
+		cout << "Student being displayed: ";
+		cin >> temp;
+		temp = temp - 1;
+		display(temp);
 		break;
 
 	case 3:
@@ -120,8 +133,8 @@ u_swch:
 	int chc;
 	cin >> chc;
 	if (chc >= 1 && chc <= 9)
+		system("CLS");
 		goto u_chc_lbl;
 
-    return 0;
+	return 0;
 }
-
