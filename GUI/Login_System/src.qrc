@@ -1,0 +1,11 @@
+<RCC>
+    <qresource prefix="/images">
+        <file>bg.png</file>
+        <file>header.jpg</file>
+        <file>Login.jpg</file>
+        <file>client-icon.png</file>
+        <file>main-icon.png</file>
+        <file>key-login.jpg</file>
+        <file>lock-icon.jpeg</file>
+    </qresource>
+</RCC>
