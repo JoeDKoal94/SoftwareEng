@@ -5,6 +5,7 @@
 #include <QtSql/QSql>
 #include <QSqlDatabase>
 #include<QMessageBox>
+#include <adminwindow.h>
 
 namespace Ui {
 class MainWindow;
@@ -24,6 +25,7 @@ private slots:
 private:
     Ui::MainWindow *ui;
 
+    adminwindow *adminDash;
     QSqlDatabase Login_Database; //Sql database object
 };
 
