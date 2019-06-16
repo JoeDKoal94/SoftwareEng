@@ -25,7 +25,7 @@ private slots:
 private:
     Ui::MainWindow *ui;
 
-    adminwindow *adminDash;
+    adminwindow *adminDash;     //instance of adminwindow for creation of dashboard
     QSqlDatabase Login_Database; //Sql database object
 };
 
