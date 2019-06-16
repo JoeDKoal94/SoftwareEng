@@ -1,23 +1,32 @@
-#include "mainwindow.h"
-#include "ui_mainwindow.h"
+#ifndef MAINWINDOW_H
+#define MAINWINDOW_H
 
-MainWindow::MainWindow(QWidget *parent) :
-    QMainWindow(parent),
-    ui(new Ui::MainWindow)
-{
-    ui->setupUi(this);
+#include <QMainWindow>
+#include <QtSql/QSql>
+#include <QSqlDatabase>
+#include<QMessageBox>
+#include <adminwindow.h>
 
-    ui->userName->setPlaceholderText("Enter username");
-    ui->userPassword->setPlaceholderText("Enter password");
-
+namespace Ui {
+class MainWindow;
 }
 
-MainWindow::~MainWindow()
+class MainWindow : public QMainWindow
 {
-    delete ui;
-}
+    Q_OBJECT
 
-void MainWindow::on_loginButton_clicked()
-{
+public:
+    explicit MainWindow(QWidget *parent = nullptr);
+    ~MainWindow();
 
-}
+private slots:
+    void on_loginButton_clicked();
+
+private:
+    Ui::MainWindow *ui;
+
+    adminwindow *adminDash;
+    QSqlDatabase Login_Database; //Sql database object
+};
+
+#endif // MAINWINDOW_H
