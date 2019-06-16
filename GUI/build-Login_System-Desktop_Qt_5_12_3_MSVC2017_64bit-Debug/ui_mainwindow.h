@@ -81,6 +81,11 @@ public:
         font.setFamily(QString::fromUtf8("MV Boli"));
         font.setPointSize(26);
         headerName->setFont(font);
+        headerName->setStyleSheet(QString::fromUtf8("#headerName{\n"
+"\n"
+"	color: rgb(0, 0, 0);\n"
+"\n"
+"}"));
         loginForm = new QGroupBox(centralWidget);
         loginForm->setObjectName(QString::fromUtf8("loginForm"));
         loginForm->setGeometry(QRect(330, 220, 481, 381));
