@@ -30,3 +30,4 @@ C:\Users\guerrerov16\Downloads\SoftwareEng-master\LMS GUI\Login\LMS GUI\Login\Lo
 C:\Users\guerrerov16\Downloads\SoftwareEng-master\LMS GUI\Login\LMS GUI\Login\Login\bin\Debug\Login.exe
 C:\Users\guerrerov16\Downloads\SoftwareEng-master\LMS GUI\Login\LMS GUI\Login\Login\bin\Debug\Login.pdb
 C:\Users\guerrerov16\Downloads\SoftwareEng-master\LMS GUI\Login\LMS GUI\Login\Login\obj\Debug\Login.addEditInfoForm.resources
+C:\Users\guerrerov16\Downloads\SoftwareEng-master\LMS GUI\Login\LMS GUI\Login\Login\obj\Debug\Login.studentInterface.resources
