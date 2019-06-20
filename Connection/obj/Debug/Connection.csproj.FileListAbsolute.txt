@@ -1,0 +1,16 @@
+C:\Users\Danny\source\repos\Connection\bin\Debug\Connection.exe.config
+C:\Users\Danny\source\repos\Connection\bin\Debug\Connection.exe
+C:\Users\Danny\source\repos\Connection\bin\Debug\Connection.pdb
+C:\Users\Danny\source\repos\Connection\bin\Debug\MySql.Data.dll
+C:\Users\Danny\source\repos\Connection\bin\Debug\Google.Protobuf.dll
+C:\Users\Danny\source\repos\Connection\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\Danny\source\repos\Connection\bin\Debug\MySql.Data.xml
+C:\Users\Danny\source\repos\Connection\obj\Debug\Connection.csprojAssemblyReference.cache
+C:\Users\Danny\source\repos\Connection\obj\Debug\Connection.Form1.resources
+C:\Users\Danny\source\repos\Connection\obj\Debug\Connection.Properties.Resources.resources
+C:\Users\Danny\source\repos\Connection\obj\Debug\Connection.csproj.GenerateResource.cache
+C:\Users\Danny\source\repos\Connection\obj\Debug\Connection.csproj.CoreCompileInputs.cache
+C:\Users\Danny\source\repos\Connection\obj\Debug\Connection.csproj.CopyComplete
+C:\Users\Danny\source\repos\Connection\obj\Debug\Connection.exe
+C:\Users\Danny\source\repos\Connection\obj\Debug\Connection.pdb
+C:\Users\Danny\source\repos\Connection\obj\Debug\Connection.Form2.resources
