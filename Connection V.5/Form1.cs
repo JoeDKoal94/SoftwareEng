@@ -21,7 +21,7 @@ namespace Connection
 
           private void button1_Click(object sender, EventArgs e)
           {
-               string ConnectionString = "Server=localhost;Database=software_project;Uid=root;Pwd=zero00;";
+               string ConnectionString = "Server=localhost;Database=software_eng;Uid=root;Pwd=Junior11!;";
                using (MySqlConnection con = new MySqlConnection(ConnectionString))
                {
                     con.Open();
@@ -49,7 +49,7 @@ namespace Connection
 
           private void button2_Click(object sender, EventArgs e)
           {
-               string ConnectionString = "Server=localhost;Database=software_project;Uid=root;Pwd=zero00;";
+               string ConnectionString = "Server=localhost;Database=software_eng;Uid=root;Pwd=Junior11!;";
                using (MySqlConnection con = new MySqlConnection(ConnectionString))
                {
                     con.Open();
