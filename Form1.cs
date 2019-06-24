@@ -11,17 +11,17 @@ using MySql.Data.MySqlClient;
 
 namespace Connection
 {
-     public partial class MainLog : Form
+     public partial class Form1 : Form
      {
         public static string variable1;
-        public MainLog()
+        public Form1()
           {
                InitializeComponent();
           }
 
           private void button1_Click(object sender, EventArgs e)
           {
-               string ConnectionString = "Server=localhost;Database=software_project;Uid=root;Pwd=zero00;";
+               string ConnectionString = "Server=localhost;Database=software_eng;Uid=root;Pwd=Junior11!;";
                using (MySqlConnection con = new MySqlConnection(ConnectionString))
                {
                     con.Open();
@@ -29,13 +29,15 @@ namespace Connection
                     {
                          cmd.CommandText = @"select count(*) from students_tbl where UserName=@UserName and Password=@Password";
                          cmd.Parameters.Add(new MySqlParameter("UserName", textBox1.Text));
-                         MainLog.variable1 = textBox1.Text;
+                         Form1.variable1 = textBox1.Text;
                          cmd.Parameters.Add(new MySqlParameter("Password", textBox2.Text));
                          int i = Convert.ToInt32(cmd.ExecuteScalar());
                          if (i > 0)
                          {
-                              UHD f3 = new UHD();
+                              
+                              Form3 f3 = new Form3();
                               f3.ShowDialog();
+                               
                          }
                          else
                          {
@@ -47,7 +49,7 @@ namespace Connection
 
           private void button2_Click(object sender, EventArgs e)
           {
-               string ConnectionString = "Server=localhost;Database=software_project;Uid=root;Pwd=zero00;";
+               string ConnectionString = "Server=localhost;Database=software_eng;Uid=root;Pwd=Junior11!;";
                using (MySqlConnection con = new MySqlConnection(ConnectionString))
                {
                     con.Open();

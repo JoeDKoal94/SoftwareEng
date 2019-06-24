@@ -16,7 +16,7 @@ namespace Connection
           {
                Application.EnableVisualStyles();
                Application.SetCompatibleTextRenderingDefault(false);
-               Application.Run(new MainLog());
+               Application.Run(new Form1());
           }
      }
 }
