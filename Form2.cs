@@ -27,7 +27,7 @@ namespace Connection
           }
           void load_table()
           {
-               string constring = "datasource=localhost;Database=software_project;Uid=root;Pwd=zero00;";
+               string constring = "datasource=localhost;Database=software_eng;Uid=root;Pwd=Junior11!;";
                MySqlConnection conDatabase = new MySqlConnection(constring);
                MySqlCommand cmdDataBase = new MySqlCommand("select * from students_tbl ;", conDatabase);
 
@@ -51,7 +51,7 @@ namespace Connection
           }
           private void button1_Click(object sender, EventArgs e)
           {
-               string constring = "datasource=localhost;Database=software_project;Uid=root;Pwd=zero00;";
+               string constring = "datasource=localhost;Database=software_eng;Uid=root;Pwd=Junior11!;";
                MySqlConnection conDatabase = new MySqlConnection(constring);
                MySqlCommand cmdDataBase = new MySqlCommand("select * from students_tbl ;", conDatabase);
 
@@ -84,7 +84,7 @@ namespace Connection
 
           private void button2_Click(object sender, EventArgs e)
           {
-               string constring = "datasource=localhost;Database=software_project;Uid=root;Pwd=zero00;";
+               string constring = "datasource=localhost;Database=software_eng;Uid=root;Pwd=Junior11!;";
                MySqlConnection conDatabase = new MySqlConnection(constring);
                MySqlCommand cmdDataBase = new MySqlCommand("select * from grades_tbl ;", conDatabase);
 
@@ -109,7 +109,7 @@ namespace Connection
 
           private void button3_Click(object sender, EventArgs e)
           {
-               string constring = "datasource=localhost;Database=software_project;Uid=root;Pwd=zero00;";
+               string constring = "datasource=localhost;Database=software_eng;Uid=root;Pwd=Junior11!;";
                MySqlConnection conDatabase = new MySqlConnection(constring);
                MySqlCommand cmdDataBase = new MySqlCommand("select * from courses_tbl ;", conDatabase);
 
@@ -132,5 +132,10 @@ namespace Connection
                }
           }
 
-     }
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Form4 f4 = new Form4();
+            f4.ShowDialog();
+        }
+    }
 }
