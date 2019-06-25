@@ -23,7 +23,7 @@ namespace Connection
         }
         void load_labels()
         {
-            string constring = "datasource=localhost;Database=software_eng;Uid=root;Pwd=Junior11!;";
+            string constring = "datasource=localhost;Database=software_eng;Uid=root;Pwd=zero00;";
             MySqlConnection conDatabase = new MySqlConnection(constring);
             conDatabase.Open();
             string temp = Form1.variable1;
@@ -39,7 +39,7 @@ namespace Connection
         }
         void load_table()
           {
-            string constring = "datasource=localhost;Database=software_eng;Uid=root;Pwd=Junior11!;";
+            string constring = "datasource=localhost;Database=software_eng;Uid=root;Pwd=zero00;";
             MySqlConnection conDatabase = new MySqlConnection(constring);
             string temp = Form1.variable1;
             MySqlCommand cmdDataBase = new MySqlCommand("SELECT UserName,course_number, course_name, start_time, end_time, days FROM grades_tbl a, courses_tbl b WHERE a.UserName = @UserName AND a.course_id = b.course_id; ; ", conDatabase);
@@ -65,7 +65,7 @@ namespace Connection
 
           private void button1_Click(object sender, EventArgs e)
           {
-            string constring = "datasource=localhost;Database=software_eng;Uid=root;Pwd=Junior11!;";
+            string constring = "datasource=localhost;Database=software_eng;Uid=root;Pwd=zero00;";
             MySqlConnection conDatabase = new MySqlConnection(constring);
             string temp = Form1.variable1;
             MySqlCommand cmdDataBase = new MySqlCommand("SELECT avg(a.credits) AS GPA FROM grades_tbl a, courses_tbl b WHERE a.UserName = @UserName AND a.course_id = b.course_id;", conDatabase);
@@ -91,7 +91,7 @@ namespace Connection
 
         private void button2_Click(object sender, EventArgs e)
           {
-               string constring = "datasource=localhost;Database=software_eng;Uid=root;Pwd=Junior11!;";
+               string constring = "datasource=localhost;Database=software_eng;Uid=root;Pwd=zero00;";
                MySqlConnection conDatabase = new MySqlConnection(constring);
                string temp = Form1.variable1;
                MySqlCommand cmdDataBase = new MySqlCommand("SELECT course_number, course_name, start_time, end_time, days FROM grades_tbl a, courses_tbl b WHERE a.UserName = @UserName AND a.course_id = b.course_id; ; ", conDatabase);
@@ -117,7 +117,7 @@ namespace Connection
 
         private void button3_Click(object sender, EventArgs e)
         {
-            string constring = "datasource=localhost;Database=software_eng;Uid=root;Pwd=Junior11!;";
+            string constring = "datasource=localhost;Database=software_eng;Uid=root;Pwd=zero00;";
             MySqlConnection conDatabase = new MySqlConnection(constring);
             string temp = Form1.variable1;
             MySqlCommand cmdDataBase = new MySqlCommand("SELECT course_number, course_name, exam_1, exam_2, final, final_grade FROM grades_tbl a, courses_tbl b WHERE a.UserName = @UserName AND a.course_id = b.course_id; ; ", conDatabase);
