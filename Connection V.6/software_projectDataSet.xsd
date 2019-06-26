@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="software_projectDataSet" targetNamespace="http://tempuri.org/software_projectDataSet.xsd" xmlns:mstns="http://tempuri.org/software_projectDataSet.xsd" xmlns="http://tempuri.org/software_projectDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="software_projectConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="software_projectConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Connection.Properties.Settings.GlobalReference.Default.software_projectConnectionString" Provider="MySql.Data.MySqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="students_tblTableAdapter" GeneratorDataComponentClassName="students_tblTableAdapter" Name="students_tbl" UserDataComponentName="students_tblTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="software_projectConnectionString (Settings)" DbObjectName="software_project.students_tbl" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `UserName`, `Password`, `first_name`, `last_name`, `street`, `city`, `zip_code`, `phone_number`, `university_name` FROM `students_tbl`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="software_projectDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="software_projectDataSet" msprop:Generator_UserDSName="software_projectDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="students_tbl" msprop:Generator_TableClassName="students_tblDataTable" msprop:Generator_TableVarName="tablestudents_tbl" msprop:Generator_TablePropName="students_tbl" msprop:Generator_RowDeletingName="students_tblRowDeleting" msprop:Generator_RowChangingName="students_tblRowChanging" msprop:Generator_RowEvHandlerName="students_tblRowChangeEventHandler" msprop:Generator_RowDeletedName="students_tblRowDeleted" msprop:Generator_UserTableName="students_tbl" msprop:Generator_RowChangedName="students_tblRowChanged" msprop:Generator_RowEvArgName="students_tblRowChangeEvent" msprop:Generator_RowClassName="students_tblRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
