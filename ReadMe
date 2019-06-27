@@ -5,7 +5,7 @@ The data will include tests,courses,final grades, usernames and passwords.
 
 
 To Run program: Create schema called " software_eng"
-Import data from folder from Github, "Mysql database.01" using Mysql import data feature
+Import data from folder from Github, "software_eng(1)" using Mysql import data feature
 To run GUI, download full folder "Connection V5, open "Final_version_1"
 Run "Connection.sln"
 
