@@ -1,5 +1,14 @@
 Hello! Welcome to our repository. The goal and purpose of our repository is to create a user interface for student and professor
-all around.
+all around. We created a GUI with C#/ visual stuido and connected it to a "Mysql" database. This allows student to view their schedule 
+and their grades. Students will also be able to calculate their GPA. While Admins can view and modify data for all enrolled students. 
+The data will include tests,courses,final grades, usernames and passwords. 
+
+
+To Run program: Create schema called " software_eng"
+Import data from folder from Github, "Mysql database.01" using Mysql import data feature
+To run GUI, download full folder "Connection V5, open "Final_version_1"
+Run "Connection.sln"
+
 
 
 
