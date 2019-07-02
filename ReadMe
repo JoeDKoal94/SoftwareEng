@@ -6,10 +6,11 @@ The data will include tests,courses,final grades, usernames and passwords.
 
 -To Run program: Create schema called " software_eng"
 -Import data from folder from Github, "software_eng(1)" using Mysql import data feature
--To run GUI, download full folder "Connection V5, open "Final_version_1". Make sure to change password found in all four fourms,
+-To run GUI, download full folder "Connection V5, open "Final_version_2.zip". Make sure to change password found in all four fourms,
   to match your mysql workbench password. (Password change will be found in line starting with "string constring") 
  -Run "Connection.sln"
-
+-Student username and passwords will be found in "student_tbl"
+-Administrator username and passwords will found in "admin_tbl"
 
 
 
